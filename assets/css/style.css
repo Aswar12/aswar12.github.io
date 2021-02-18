@@ -98,10 +98,12 @@ h6 {
   color: rgba(255, 255, 255, 0.8);
 }
 
-#header h2 span {
-  color: #fff;
-  border-bottom: 2px solid #18d26e;
-  padding-bottom: 6px;
+#header h3 span {
+  color: rgb(24, 210, 110);
+  line-height: 1;
+  display: inline-block;
+  margin-bottom: 2px;
+
 }
 
 #header img {
@@ -164,6 +166,7 @@ h6 {
 }
 
 #header.header-top .social-links,
+
 #header.header-top h2 {
   display: none;
 }
