@@ -769,7 +769,7 @@
   <script src="assets/js/typed.js"></script>
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbww2k59QDd2bJsuBaj3r-KGzp8_cPx4RRknwBaR1OulJQFoKZwPFJYrOrkfkeSp6azu/exec'
-    const form = document.forms['submit-to-google-sheet']
+    const form = document.forms['submit-to-google-sheet'];
     const btnKirim =document.querySelector('.btn-kirim');
     const btnLoading = document.querySelector('.btn-loading');
     const allertijo = document.querySelector('.myalert-ijo');
@@ -785,6 +785,7 @@
           btnLoading.classList.toggle('d-none');
           btnKirim.classList.toggle('d-none');
           allertijo.classList.toggle('d-none');
+          form.reset();
           console.log('Success!', response)})
         .catch(error => {
           allertmerah.classList.toggle('d-none');
