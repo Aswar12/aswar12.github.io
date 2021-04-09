@@ -32,17 +32,17 @@
 
   <!-- ======= Header ======= -->
   <header id="header">
-    
+
     <div class="container">
       <h1><a href="index.html">ASWAR <span> SUMARLIN</span></a></h1>
-      <div  class="col-md-4">
+      <div class="col-md-4">
         <left>
-        <h3> I am  <span class="typed-text"></span><span class="TypeCursor">&nbsp;</span></h3>
-      </left>
+          <h3> I am <span class="typed-text"></span><span class="TypeCursor">&nbsp;</span></h3>
+        </left>
       </div>
-      
+
       <!-- Uncomment below if you prefer to use an image logo -->
-    
+
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -82,9 +82,9 @@
           <img src="assets/img/me.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Penggiat IT, &amp;  Penggiat Literasi  </h3>
+          <h3>Penggiat IT, &amp; Penggiat Literasi </h3>
           <p class="font-italic">
-            Saya Aswar Sumarlin mahasiswa dari <a href="https://akba.ac.id/"> STMIK AKBA MAKASSAR </a> jurusan Teknik informatika, 
+            Saya Aswar Sumarlin mahasiswa dari <a href="https://akba.ac.id/"> STMIK AKBA MAKASSAR </a> jurusan Teknik informatika,
             Kesibukan saya saat ini yaitu belajar, belajar,dan belajar.
           </p>
           <div class="row">
@@ -106,17 +106,17 @@
             </div>
           </div>
           <p>
-             "It does not really matters what we bear, what really matters how we bear it"
+            "It does not really matters what we bear, what really matters how we bear it"
           </p>
           <p>
             "Nggak pernah terlalu penting apa yang kita tanggungi, tapi yang lebih penting bagimana kita menanggunginya" <br>
             Bicara tentang apa yang kita punya contohnya : hubungan, uang, masa depan, bakat apapun yang kita miliki,
-            akan jauh lebih baik waktu kita belajar dari bagaimana  orang menanggung apa yang mereka punya, bagaimana mereka 
+            akan jauh lebih baik waktu kita belajar dari bagaimana orang menanggung apa yang mereka punya, bagaimana mereka
             meresponinya dibanding kita hanya membandingkan diri dengan kepemilikan kita dengan apa yang mereka punya,
             harta yang banyak, kehidupan yang mewah, itu semua nggak pernah lebih penting daripada bagimana kita mengelolahnya. <br>
             jadi kelola apa yang ada ditangan kita.
-            
-         </p>
+
+          </p>
         </div>
       </div>
 
@@ -130,7 +130,13 @@
         <div class="col-lg-3 col-md-6">
           <div class="count-box">
             <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="652" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end=" <?php
+                                                                    $session = curl_init('https://www.instagram.com/aswar_sumarlin/followers/ ');
+                                                                    $result = curl_exec($session);
+                                                                    curl_close($session);
+                                                                    print $result;
+                                                                    ?>
+            " data-purecounter-duration="1" class="purecounter"></span>
             <p> IG Followers</p>
           </div>
         </div>
@@ -214,7 +220,7 @@
           </div>
 
           <div class="progress">
-            <span class="skill"> Relationship  <i class="val">10%</i></span>
+            <span class="skill"> Relationship <i class="val">10%</i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -260,8 +266,8 @@
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-          <img src="assets/img/girl.png" class="ri-girl-2-line" style="color: #47aeff;"></img>
-            <h3>  Perempuan </h3>
+            <img src="assets/img/girl.png" class="ri-girl-2-line" style="color: #47aeff;"></img>
+            <h3> Perempuan </h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
@@ -272,7 +278,7 @@
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-          <img src="assets/img/camera.png" alt="">
+            <img src="assets/img/camera.png" alt="">
             <h3>Fotografi</h3>
           </div>
         </div>
@@ -725,21 +731,21 @@
         </div>
         <div class="my-3">
           <center>
-          <button  class="btn btn-primary btn-loading d-none btn-loading" type="button" disabled>
-            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-            Loading...
-          </button>
-        </center>
-        <div class="alert alert-danger alert-dismissible fade show d-none myalert-merah" role="alert">
-          <strong>Gagal!</strong> Pesan anda tidak terkirim.
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+            <button class="btn btn-primary btn-loading d-none btn-loading" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </center>
+          <div class="alert alert-danger alert-dismissible fade show d-none myalert-merah" role="alert">
+            <strong>Gagal!</strong> Pesan anda tidak terkirim.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
           <div class="alert alert-success alert-dismissible fade show myalert-ijo d-none" role="alert">
             <strong>Terimakasih!</strong> Pesan anda sudah saya terima.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
         </div>
-        <div class="text-center btn-kirim "><button type="submit" >Kirim Pesan</button>
+        <div class="text-center btn-kirim "><button type="submit">Kirim Pesan</button>
         </div>
       </form>
 
@@ -770,26 +776,31 @@
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbww2k59QDd2bJsuBaj3r-KGzp8_cPx4RRknwBaR1OulJQFoKZwPFJYrOrkfkeSp6azu/exec'
     const form = document.forms['submit-to-google-sheet'];
-    const btnKirim =document.querySelector('.btn-kirim');
+    const btnKirim = document.querySelector('.btn-kirim');
     const btnLoading = document.querySelector('.btn-loading');
     const allertijo = document.querySelector('.myalert-ijo');
     const allertmerah = document.querySelector('myalert-merah');
 
-  
+
     form.addEventListener('submit', e => {
       e.preventDefault()
       btnLoading.classList.toggle('d-none');
       btnKirim.classList.toggle('d-none');
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
         .then(response => {
           btnLoading.classList.toggle('d-none');
           btnKirim.classList.toggle('d-none');
           allertijo.classList.toggle('d-none');
           form.reset();
-          console.log('Success!', response)})
+          console.log('Success!', response)
+        })
         .catch(error => {
           allertmerah.classList.toggle('d-none');
-          console.error('Error!', error.message)})
+          console.error('Error!', error.message)
+        })
     })
   </script>
 
